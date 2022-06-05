@@ -22,9 +22,9 @@ public class StatServices {
     public StatServices() {
         this.manager = StatsManagerImpl.getInstance();
         if (manager.StatsListSize() == 0) {
-            this.manager.addStat(new Stats(1, "EstheMC", "11-11-11", 200));
-            this.manager.addStat(new Stats(2, "ÓscarPL", "22-22-22", 50));
-            this.manager.addStat(new Stats(3, "MarioAH", "33-33-", 100));
+            this.manager.addStat(new Stats(1, "EstheMC", "11-11-11", 200, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0GM2viUUTxsNGd-U5MvVHEHkeRk3vtpsq5w&usqp=CAU"));
+            this.manager.addStat(new Stats(2, "ÓscarPL", "22-22-22", 50, "https://data.whicdn.com/images/194937115/original.jpg"));
+            this.manager.addStat(new Stats(3, "MarioAH", "33-33-", 100, "https://www.androidsis.com/wp-content/uploads/supermario.jpg"));
         }
     }
 

@@ -5,14 +5,24 @@ public class Stats {
     private String user;
     private String date;
     private int score;
+    private String avatar;
 
-    public Stats(int id, String user, String date, int score) {
+    public Stats(int id, String user, String date, int score, String avatar) {
         this.id = id;
         this.user = user;
         this.date = date;
         this.score = score;
+        this.avatar=avatar;
     }
     public Stats(){}
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
 
     public int getId() {
         return id;
