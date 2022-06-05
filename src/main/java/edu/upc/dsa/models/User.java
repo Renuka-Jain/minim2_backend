@@ -10,6 +10,7 @@ public class User {
     private String password;
     private String username;
     private String mail;
+
     public List<Item> itemList = new ArrayList<>();
     //private double numCoins;
    // private List<String> items;

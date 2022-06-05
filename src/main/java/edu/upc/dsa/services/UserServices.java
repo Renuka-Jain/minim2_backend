@@ -29,7 +29,7 @@ public class UserServices {
         if (manager.userListSize() == 0) {
             User u1 = this.manager.addUser(new User("20297698P", "Esther", "12345", "EstheMC", "esther@gmail.com"));
             User u2 = this.manager.addUser(new User("08979711H", "Óscar", "Abcd", "ÓscarPL", "oscar@gmail.com"));
-
+            User u3 = this.manager.addUser(new User("86982565F", "Mario", "mario", "MarioAH", "mario@gmail.com"));
             Item i1 = new Item("Espada", "Para atacar", 50);
             Item i2 = new Item("Llave", "Abre una puerta", 100);
 
@@ -67,7 +67,7 @@ public class UserServices {
     @ApiOperation(value = "Registrar nuevo usuario", notes = "Nombre y password")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Successful", response = User.class),
-            @ApiResponse(code = 500, message = "Validation Error")
+            @ApiResponse(code = 500, message = "Validation Error"),
     })
     @Path("/añadir")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -158,5 +158,8 @@ public class UserServices {
             return Response.status(201).build();
         }
     }
+
+
+
 
 }
